@@ -8,8 +8,8 @@
 *.sln.docstates
 
 # Data sensitive objects
-PUBG_bot/PUBG_bot/App.config
-PUBG_bot/PUBG_botProperties/
+/PUBG_bot/PUBG_bot/App.config
+/PUBG_bot/PUBG_bot/Properties/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
