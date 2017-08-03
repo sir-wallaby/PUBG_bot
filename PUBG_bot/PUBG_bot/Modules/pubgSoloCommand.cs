@@ -31,49 +31,49 @@ namespace PUBG_bot.Modules
             try
             {
                 var SquadRank = stats.Stats.Find(x =>
-                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Season.EASeason2).Stats.Find(x =>
+                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Seasons.EASeason3).Stats.Find(x =>
                         x.Stat == Stats.Rating).Rank;
 
                 var KDR = stats.Stats.Find(x =>
-                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Season.EASeason2).Stats.Find(x =>
+                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Seasons.EASeason3).Stats.Find(x =>
                         x.Stat == Stats.KDR).Value;
 
                 var kills = stats.Stats.Find(x =>
-                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Season.EASeason2).Stats.Find(x =>
+                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Seasons.EASeason3).Stats.Find(x =>
                         x.Stat == Stats.Kills).Value;
 
                 var wins = stats.Stats.Find(x =>
-                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Season.EASeason2).Stats.Find(x =>
+                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Seasons.EASeason3).Stats.Find(x =>
                         x.Stat == Stats.Wins).Value;
 
                 var win_percentage = stats.Stats.Find(x =>
-                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Season.EASeason2).Stats.Find(x =>
+                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Seasons.EASeason3).Stats.Find(x =>
                         x.Stat == Stats.WinPercentage).Value;
 
                 var roundsPlayed = stats.Stats.Find(x =>
-                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Season.EASeason2).Stats.Find(x =>
+                    x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Seasons.EASeason3).Stats.Find(x =>
                         x.Stat == Stats.RoundsPlayed).Value;
 
                 var KPG = stats.Stats.Find(x =>
-                   x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Season.EASeason2).Stats.Find(x =>
+                   x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Seasons.EASeason3).Stats.Find(x =>
                        x.Stat == Stats.KillsPerGame).Value;
 
                 var longestkill = stats.Stats.Find(x =>
-                  x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Season.EASeason2).Stats.Find(x =>
+                  x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Seasons.EASeason3).Stats.Find(x =>
                       x.Stat == Stats.LongestKill).Value;
 
                 var KO = stats.Stats.Find(x =>
-                  x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Season.EASeason2).Stats.Find(x =>
+                  x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Seasons.EASeason3).Stats.Find(x =>
                       x.Stat == Stats.Knockouts).Value;
 
                 var rating = stats.Stats.Find(x =>
-                  x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Season.EASeason2).Stats.Find(x =>
+                  x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Seasons.EASeason3).Stats.Find(x =>
                       x.Stat == Stats.Rating).Value;
 
                 double knockoutsPerGame = Math.Round((double.Parse(KO) / double.Parse(roundsPlayed)), 3);
 
                 var assists = stats.Stats.Find(x =>
-                  x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Season.EASeason2).Stats.Find(x =>
+                  x.Mode == Mode.Solo && x.Region == Region.AGG && x.Season == Seasons.EASeason3).Stats.Find(x =>
                       x.Stat == Stats.Assists).Value;
 
                 await Context.Channel.SendMessageAsync("\n```Rank: " + SquadRank.ToString() + "\n" +
