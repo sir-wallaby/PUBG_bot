@@ -181,6 +181,7 @@
     <Compile Include="CommandHandler.cs" />
     <Compile Include="Modules\pubgDuoCommand.cs" />
     <Compile Include="Modules\pubgSoloCommand.cs" />
+    <Compile Include="Modules\pubgFPPSquadCommand.cs" />
     <Compile Include="Modules\pubgSquadCommand.cs" />
     <Compile Include="Modules\Test.cs" />
     <Compile Include="Program.cs" />
